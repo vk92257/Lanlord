@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">LandlordApp</string>
+    <string name="all_permission_req">Require All Permissions to run the app properly. \nGo to settings and Allow All Permissions</string>
+    <string name="location_permission_req">Required Location permission.\nGo to settings and Allow Location Permission</string>
+    <string name="storage_permission_req">Required Storage permission.\nGo to settings and Allow Storage Permission</string>
+    <string name="something_went_wrong">something went wrong</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="we_make_it_simple_to_find_food_you_crave_access_your_location_to_make_it_easy">We make it simple to find food you crave. Access your location to make it easy</string>
+    <string name="allow_location">Allow Location</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="use_my_current_location">Use My Current Location</string>
+    <string name="enter_a_location">Enter a location</string>
+    <string name="choose_your_location">Choose your Location</string>
+    <string name="next">next</string>
+    <string name="continue_as_a_guest">Continue as a Guest</string>
+    <string name="add_property">Add Property </string>
+    <string name="choose_tenant">Choose Tenant</string>
+    <string name="random_txt">Amet neque nisl porttitor duis eu. Nulla faucibus vitae pharetra adipiscing ut morbi. In ultrices est amet massa sodales.</string>
+    <string name="assing_apartment">Assign Apartment</string>
+
+    <!--  Sign up Activity  -->
+    <string name="property">Property</string>
+    <string name="signup">Signup</string>
+    <string name="fill_your_details_to_continue">Fill your details to continue</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="your_email">Your email</string>
+    <string name="password">Password</string>
+    <string name="set_password">Set password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="signUP_have_an_account"><font fgcolor="#ddd"> Already have an Account ?</font><font fgcolor="#F3764A"><b> Login Here</b></font>.</string>
+    <string name="terms_and_conditon"> I accept <b> <u>Terms &amp; Conditions </u></b> &amp;</string>
+    <string name="privacy_policy"> <b><u> Privacy Policy</u></b></string>
+    <string name="already_have_an_account"> Already have an account? <b>Sign in </b></string>
+    <string name="register">Register</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="temp_text">"Placerat temper aliquet nunc aliquet sapien, sed. Sed nisi, aliquam ultrices felis scelerisque vitae. Iaculis ipsum tortor facilisi vivamus. Maecenas pulvinar nec gravida enim urna vitae ultrices at. Nulla ac aliquam bibendum in amet, et, quam id. Odio aliquam, ipsum donec varius aliquam sed lobortis donec. Neque vitae nulla ligula aliquet scelerisque suspendisse. Congue feugiat luctus morbi quam urna nunc lorem tellus. Quis turpis in pellentesque at. Ullamcorper gravida fermentum diam condimentum vulputate dolor amet. Elementum mollis suspendisse sed ut proin vulputate mattis cras. Morbi id orci, feugiat nec integer vel quam netus porttitor. Malesuada vel, sit volutpat, mauris. Etiam sit elementum lectus tristique. Donec adipiscing et leo cras. Porttitor pellentesque vel pellentesque mauris feugiat. Justo eget nibh sollicitudin at incident. Bibendum at malesuada morbi duis ut. Mauris, leo convallis sit lacus ullamcorper neque id. Pulvinar urna amet at suscipit.Sodales mi amet consequat eleifend etiam imperdiet tortor. Viverra vitae facilisi erat feugiat felis elit. Donec adipiscing et leo cras. Porttitor pellentesque vel pellentesque "</string>
+    <string name="i_decline">I Decline</string>
+    <string name="i_accept">I Accept</string>
+
+
+    <!--    Login Screen -->
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!--    Forget Password Screen -->
+    <string name="signin">Signin</string>
+    <string name="dont_have_account"> Do not have an account? Signup.</string>
+    <string name="fogrget_password_txt">Please enter your registered email address.You will receive a link to create a new password via email.</string>
+    <string name="didn_t_receive_link_resend">Didn’t Receive Link? Resend</string>
+    <string name="submit">Submit</string>
+
+
+    <!--    Choice Screen -->
+    <string name="are_you_a">Are you a</string>
+    <string name="property_manager">Property Manager</string>
+    <string name="render">Render</string>
+
+
+    <!--    Drawer menu  Screen -->
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="manage_property">Manage Property</string>
+    <string name="signout">Signout</string>
+    <string name="feedback">Feedback</string>
+    <string name="settings">Settings</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="requests_and_problems">Requests and Problems</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="email_address">Email address</string>
+    <string name="dashboard">Dashboard</string>
+    <!--  Bottom Navigation -->
+    <string name="messages">Messages</string>
+    <string name="notices">Notices</string>
+    <string name="tenants">Tenants</string>
+    <string name="lorem_ipsum_is_dummytext">lorem ipsum is dummytext</string>
+
+
+</resources>

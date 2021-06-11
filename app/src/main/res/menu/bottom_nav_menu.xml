@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/selector_home"/>
+    <item
+        android:id="@+id/messages"
+        android:title="@string/messages"
+        android:icon="@drawable/selector_messages"/>
+    <item
+        android:id="@+id/notices"
+        android:title="@string/notices"
+        android:icon="@drawable/selector_notices"/>
+    <item
+        android:id="@+id/tenants"
+        android:title="@string/tenants"
+        android:icon="@drawable/selector_tenants"/>
+
+</menu>

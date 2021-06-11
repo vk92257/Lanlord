@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/my_profile"
+            android:title="@string/my_profile" />
+        <item
+            android:id="@+id/manageProperty"
+            android:title="@string/manage_property" />
+        <item
+            android:id="@+id/RequestAndProplems"
+            android:title="@string/requests_and_problems" />
+        <item
+            android:id="@+id/Maintenance"
+            android:title="@string/maintenance" />
+        <item
+            android:id="@+id/Settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/Feedback"
+            android:title="@string/feedback" />
+        <item
+            android:id="@+id/Signout"
+            android:title="@string/signout" />
+    </group>
+</menu>
