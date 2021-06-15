@@ -9,8 +9,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.app.landlord.R
 import com.app.landlord.databinding.FragmentHomeBinding
-import com.app.landlord.modules.home.dashBoard.home.fragments.notifications.MessagesFragment
+import com.app.landlord.modules.home.dashBoard.home.fragments.messages.MessagesFragment
+import com.app.landlord.modules.home.dashBoard.home.fragments.notices.NoticesFragment
 import com.app.landlord.modules.home.dashBoard.home.fragments.notifications.NotificationFragment
+import com.app.landlord.modules.home.dashBoard.home.fragments.tenants.TenantsFragment
 import com.app.landlord.modules.home.dashBoard.home.listener.TitleChangeListenre
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -44,7 +46,9 @@ class HomeFragment : Fragment(), View.OnClickListener,
 
     }
 
-   public fun setOnTitlechangeListener(listenre: TitleChangeListenre){
+    /*Call back for changing the title of toolbar*/
+
+    public fun setOnTitlechangeListener(listenre: TitleChangeListenre){
         titleChangeListenre = listenre
     }
 
@@ -68,13 +72,13 @@ class HomeFragment : Fragment(), View.OnClickListener,
                 return true
             }
             R.id.notices -> {
+                replaceFragment(NoticesFragment())
                 callListener("Notices")
-                replaceFragment(NotificationFragment())
                 return true
             }
             R.id.tenants -> {
+                replaceFragment(TenantsFragment())
                 callListener("Tenants")
-                replaceFragment(NotificationFragment())
                 return true
             }
 

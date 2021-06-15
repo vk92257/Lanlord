@@ -1,26 +1,27 @@
-package com.app.landlord.modules.home.dashBoard.home.fragments.notifications
+package com.app.landlord.modules.home.dashBoard.requestAndProblems.complete
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.app.landlord.databinding.FragmentCurrentBinding
 
 import com.app.landlord.databinding.FragmentHomeBinding
 import com.app.landlord.databinding.FragmentMessagesBinding
 import com.app.landlord.databinding.FragmentNotificationsBinding
 
-class MessagesFragment : Fragment(), View.OnClickListener {
+class CompleteFragment : Fragment(), View.OnClickListener {
     private val TAG: String? = "MessagesFragment"
 
-    var binding: FragmentMessagesBinding? = null
+    var binding: FragmentCurrentBinding? = null
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         if (binding == null) {
-            binding = FragmentMessagesBinding.inflate(inflater, container, false)
+            binding = FragmentCurrentBinding.inflate(inflater, container, false)
         }
         return binding!!.root
     }

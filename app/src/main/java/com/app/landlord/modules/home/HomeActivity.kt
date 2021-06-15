@@ -14,6 +14,9 @@ import com.app.landlord.R
 import com.app.landlord.databinding.ActivityHomeBinding
 import com.app.landlord.modules.home.dashBoard.home.HomeFragment
 import com.app.landlord.modules.home.dashBoard.home.listener.TitleChangeListenre
+import com.app.landlord.modules.home.dashBoard.mangaProperty.ManagePropertyFragment
+import com.app.landlord.modules.home.dashBoard.profile.ProfileFragment
+import com.app.landlord.modules.home.dashBoard.requestAndProblems.RequestAndProblemsFragment
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.view.*
 
@@ -80,9 +83,11 @@ val fragment = HomeFragment()
         return true
     }
 
-    private fun selectDrawer(item: MenuItem) {
 
-        var fragment : Fragment? = null
+    /* this method is used for switching the tabs on the clicks of the navigation drawer*/
+
+   private fun selectDrawer(item: MenuItem) {
+       var fragment : Fragment? = null
         when(item.itemId){
             R.id.home ->{
                     fragment = HomeFragment()
@@ -93,13 +98,16 @@ val fragment = HomeFragment()
 //                setSupportActionBar( homeBinding!!.toolbar)
             }
             R.id.my_profile ->{
-
+                fragment = ProfileFragment()
+                homeBinding!!.toolbarText.setText("Profile")
             }
             R.id.manageProperty ->{
-
+                fragment = ManagePropertyFragment()
+                homeBinding!!.toolbarText.setText("Manager Property")
             }
             R.id.RequestAndProplems ->{
-
+                fragment = RequestAndProblemsFragment()
+                homeBinding!!.toolbarText.setText("Request And Problems")
             }
             R.id.Maintenance ->{
 
@@ -131,5 +139,10 @@ val fragment = HomeFragment()
         homeBinding!!.toolbarText.setText(title)
     }
 
-
+    override fun onDestroy() {
+        super.onDestroy()
+        if ( homeBinding != null){
+            homeBinding = null
+        }
+    }
 }

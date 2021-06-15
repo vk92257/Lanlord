@@ -28,12 +28,13 @@
                     android:minHeight="?attr/actionBarSize"
                     android:textAlignment="center"
                     app:titleTextColor="@color/white">
+
                     <TextView
                         android:id="@+id/toolbarText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_50sdp"
-                        android:fontFamily="@font/inter_regular"
+                        android:fontFamily="@font/inter_semibold"
                         android:gravity="center_horizontal"
                         android:text="Dashboard"
                         android:textAlignment="center"

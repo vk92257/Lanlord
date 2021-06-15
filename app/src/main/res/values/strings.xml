@@ -78,6 +78,27 @@
     <string name="notices">Notices</string>
     <string name="tenants">Tenants</string>
     <string name="lorem_ipsum_is_dummytext">lorem ipsum is dummytext</string>
+        <!-- Profile Fragment   -->
+    <string name="your_profile_is_incomplete">Your profile is incomplete</string>
+    <string name="user_full_name">User Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="home_phone_number">Home Phone Number</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_phone_number">Business Phone Number</string>
+    <string name="business_website">Business Website</string>
+    <string name="street_name">Street Name</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="select">Select</string>
+    <string name="province">Province</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="country">Country</string>
+    <string name="no_tenant_added">No Tenant Added</string>
+
+<!--    Tenants-->
+    <string name="add_tenant_against_your_property">Add Tenant against your property</string>
+    <string name="add_tenant">Add Tenant</string>
+    <string name="no_property_added">No Property Added</string>
+    <string name="add_your_property">Add Your Property</string>
 
 
 </resources>
