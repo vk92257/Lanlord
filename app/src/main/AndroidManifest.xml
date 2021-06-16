@@ -13,24 +13,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Landlord">
+        <activity android:name=".modules.maintenanceReminder.MaintenanceReminder"></activity>
+        <activity android:name=".modules.request.Requests" />
+        <activity android:name=".modules.changePassword.ChangePasswordActivity" />
         <activity
             android:name=".modules.home.HomeActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".modules.choiceScreen.ChoiceScreenActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".modules.forgetPassword.ForgetPasswordActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".modules.login.LoginActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".modules.signUp.TermsAndCondition"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".modules.signUp.SignUp"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".modules.intro.IntroActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".modules.MainActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".modules.choiceScreen.ChoiceScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.forgetPassword.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.signUp.TermsAndCondition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.signUp.SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.intro.IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

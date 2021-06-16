@@ -1,4 +1,4 @@
-package com.app.landlord.modules.home.dashBoard.requestAndProblems.open
+package com.app.landlord.modules.home.dashBoard.maintenance
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,21 +7,21 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.landlord.databinding.*
-import com.app.landlord.modules.home.dashBoard.requestAndProblems.open.adapter.OpenAdapter
-import com.app.landlord.modules.home.dashBoard.requestAndProblems.open.model.Data
+import com.app.landlord.modules.home.dashBoard.maintenance.adapter.MaintenanceAdapter
+import com.app.landlord.modules.home.dashBoard.maintenance.model.Data
 
-class OpenFragment : Fragment(), View.OnClickListener {
+class MaintenanceFragment : Fragment(), View.OnClickListener {
     private val TAG: String? = "MessagesFragment"
     val list = ArrayList<Data>()
-     var  adapter:OpenAdapter?= null
-    var binding: FragmentOpenBinding? = null
+     var  adapter:MaintenanceAdapter?= null
+    var binding: FragmentMaintenanceBinding? = null
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         if (binding == null) {
-            binding = FragmentOpenBinding.inflate(inflater, container, false)
+            binding = FragmentMaintenanceBinding.inflate(inflater, container, false)
         }
         return binding!!.root
     }
@@ -36,7 +36,7 @@ class OpenFragment : Fragment(), View.OnClickListener {
 
     private fun settingUpRv() {
         binding!!.rvOpen.layoutManager = LinearLayoutManager(activity)
-        adapter = context?.let { OpenAdapter(it,list) }
+        adapter = context?.let { MaintenanceAdapter(it,list) }
         binding!!.rvOpen.adapter = adapter
     }
     private fun perFormClicks() {

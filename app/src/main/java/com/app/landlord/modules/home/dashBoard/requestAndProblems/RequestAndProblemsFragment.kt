@@ -9,7 +9,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.app.landlord.databinding.FragmentRequestProblemsBinding
 
 
-import com.app.landlord.modules.home.dashBoard.home.fragments.notices.adapter.ViewPagerAdapter
+import com.app.landlord.modules.home.dashBoard.requestAndProblems.adapter.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 
 

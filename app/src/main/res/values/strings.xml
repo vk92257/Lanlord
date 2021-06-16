@@ -78,7 +78,7 @@
     <string name="notices">Notices</string>
     <string name="tenants">Tenants</string>
     <string name="lorem_ipsum_is_dummytext">lorem ipsum is dummytext</string>
-        <!-- Profile Fragment   -->
+    <!-- Profile Fragment   -->
     <string name="your_profile_is_incomplete">Your profile is incomplete</string>
     <string name="user_full_name">User Full Name</string>
     <string name="mobile_number">Mobile Number</string>
@@ -94,11 +94,36 @@
     <string name="country">Country</string>
     <string name="no_tenant_added">No Tenant Added</string>
 
-<!--    Tenants-->
+    <!--    Tenants-->
     <string name="add_tenant_against_your_property">Add Tenant against your property</string>
     <string name="add_tenant">Add Tenant</string>
     <string name="no_property_added">No Property Added</string>
     <string name="add_your_property">Add Your Property</string>
+    <string name="view_details"><u>View Details</u></string>
+    <!--    help and support Fragment-->
+    <string name="how_can_we_support_you">How can we support you?</string>
+    <string name="it_seems_you_need_support_we_are_here_to_help_so_please_get_in_touch_with_us_by_sending_email">It seems you need support, we are here to help, so please get in touch with us by sending email</string>
+    <string name="subject">Subject</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="message">Message</string>
+    <string name="enter_your_query_here">Enter your query here</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="enter_your_new_password">Enter your new password</string>
+    <string name="update">Update</string>
+    <!--    Request Screen-->
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="complete_request">Complete Request</string>
+    <string name="request">Request</string>
+    <string name="tenant_name">Tenant Name</string>
+    <string name="water_supply">Water Supply</string>
+    <string name="old_toronto_harbourfront_on_ca">Old Toronto, Harbourfront, ON, CA</string>
+    <string name="temp_textg">Cras amet turpis cras lectus. Nibh congue etiam id urna temper, donec scelerisque nascetur aliquet. Mauris, sem sit dictum nulla vulputate nisl dignissim pulvinar volutpat. Iaculis justo pretium, amet sit odio. Velit nullam bibendum lectus phasellus iaculis pretium risks. Tristique lacus, pellentesque eleifend malesuada et nunc adipiscing. Purus arcu vitae mauris nisl. Condimentum nulla elit vestibulum neque hac dui neque id. Ac potenti adipiscing sit ac velit volutpat a. Tortor ullamcorper facilities present</string>
+    <string name="set_maintenance_reminder">Set Maintenance Reminder</string>
 
 
 </resources>

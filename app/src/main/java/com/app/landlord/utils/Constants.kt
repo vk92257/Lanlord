@@ -41,7 +41,11 @@ class FragConst {
 
 
     }
-
+class LocalBroadCasst {
+    companion object{
+        const val  CANCEL_CLICK  = "cancelClick"
+    }
+}
 
 
 }

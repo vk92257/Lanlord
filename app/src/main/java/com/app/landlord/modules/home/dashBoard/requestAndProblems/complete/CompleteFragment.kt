@@ -5,23 +5,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.app.landlord.databinding.FragmentCurrentBinding
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.app.landlord.databinding.*
 
-import com.app.landlord.databinding.FragmentHomeBinding
-import com.app.landlord.databinding.FragmentMessagesBinding
-import com.app.landlord.databinding.FragmentNotificationsBinding
+import com.app.landlord.modules.home.dashBoard.requestAndProblems.complete.adapter.ContinueAdapter
+import com.app.landlord.modules.home.dashBoard.requestAndProblems.complete.model.Data
 
 class CompleteFragment : Fragment(), View.OnClickListener {
     private val TAG: String? = "MessagesFragment"
-
-    var binding: FragmentCurrentBinding? = null
+    val list = ArrayList<Data>()
+    var  adapter:ContinueAdapter?= null
+    var binding: FragmentCompleteBinding? = null
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         if (binding == null) {
-            binding = FragmentCurrentBinding.inflate(inflater, container, false)
+            binding = FragmentCompleteBinding.inflate(inflater, container, false)
         }
         return binding!!.root
     }
@@ -30,10 +31,14 @@ class CompleteFragment : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         perFormClicks()
-
+        settingUpRv()
     }
 
-
+    private fun settingUpRv() {
+        binding!!.rvOpen.layoutManager = LinearLayoutManager(activity)
+        adapter = context?.let { ContinueAdapter(it,list) }
+        binding!!.rvOpen.adapter = adapter
+    }
     private fun perFormClicks() {
 
 

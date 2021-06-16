@@ -29,17 +29,42 @@
                     android:textAlignment="center"
                     app:titleTextColor="@color/white">
 
-                    <TextView
-                        android:id="@+id/toolbarText"
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="@dimen/_50sdp"
-                        android:fontFamily="@font/inter_semibold"
-                        android:gravity="center_horizontal"
-                        android:text="Dashboard"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_15sdp" />
+                    android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:textAlignment="center"
+                            android:layout_marginEnd="@dimen/_50sdp"
+                            android:id="@+id/toolbarText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_semibold"
+                            android:text="Dashboard"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/toolbarCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_semibold"
+                            android:text="@string/cancel"
+                            android:textColor="@color/textColorGrey"
+                            android:textSize="@dimen/_13sdp" />
+
+
+
+
+
+                    </RelativeLayout>
+
 
 
                 </androidx.appcompat.widget.Toolbar>

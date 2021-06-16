@@ -9,6 +9,9 @@ import com.app.landlord.modules.home.dashBoard.home.fragments.messages.MessagesF
 import com.app.landlord.modules.home.dashBoard.home.fragments.notices.current.CurrentFragment
 import com.app.landlord.modules.home.dashBoard.home.fragments.notices.past.PastFragment
 import com.app.landlord.modules.home.dashBoard.profile.ProfileFragment
+import com.app.landlord.modules.home.dashBoard.requestAndProblems.complete.CompleteFragment
+import com.app.landlord.modules.home.dashBoard.requestAndProblems.complete.adapter.ContinueAdapter
+import com.app.landlord.modules.home.dashBoard.requestAndProblems.open.OpenFragment
 
 
 class ViewPagerAdapter(
@@ -22,7 +25,7 @@ class ViewPagerAdapter(
     override fun createFragment(position: Int): Fragment {
         when (position) {
             0 ->  return CurrentFragment()
-            1 -> return PastFragment()
+            1 -> return   PastFragment()
             else ->  return CurrentFragment()
         }
     }
