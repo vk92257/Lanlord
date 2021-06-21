@@ -20,6 +20,7 @@
                 android:background="@drawable/square_bg_white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
@@ -31,9 +32,7 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-
+                         android:layout_height="wrap_content">
                         <TextView
                             android:textAlignment="center"
                             android:layout_marginEnd="@dimen/_50sdp"
@@ -60,12 +59,21 @@
                             android:textSize="@dimen/_13sdp" />
 
 
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/toolbarsearch"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/ic_search"
+                            />
+
+
 
 
 
                     </RelativeLayout>
-
-
 
                 </androidx.appcompat.widget.Toolbar>
             </LinearLayout>

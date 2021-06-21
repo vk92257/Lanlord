@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+ android:padding="@dimen/_5sdp"
+    android:background="#03202199"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+
+    <TextView
+        android:id="@+id/legalNotice"
+        android:fontFamily="@font/inter_regular"
+        android:background="@drawable/bg_white_upper_radios"
+        android:textAlignment="center"
+        android:padding="@dimen/_18sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/legal_notice"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/generNotices"
+        android:background="@drawable/bg_white_lower_radious"
+        android:textAlignment="center"
+        android:padding="@dimen/_18sdp"
+        android:fontFamily="@font/inter_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/grant"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/dismiss"
+        android:fontFamily="@font/inter_regular"
+        android:background="@drawable/button_bg_white_radois"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textAlignment="center"
+        android:padding="@dimen/_18sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dismiss"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>
+</layout>

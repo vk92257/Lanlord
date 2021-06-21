@@ -13,6 +13,7 @@ import com.app.landlord.modules.home.dashBoard.home.fragments.messages.MessagesF
 import com.app.landlord.modules.home.dashBoard.home.fragments.notices.NoticesFragment
 import com.app.landlord.modules.home.dashBoard.home.fragments.notifications.NotificationFragment
 import com.app.landlord.modules.home.dashBoard.home.fragments.tenants.TenantsFragment
+import com.app.landlord.modules.home.dashBoard.home.listener.BottomNavClickListenre
 import com.app.landlord.modules.home.dashBoard.home.listener.TitleChangeListenre
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -21,6 +22,7 @@ class HomeFragment : Fragment(), View.OnClickListener,
     BottomNavigationView.OnNavigationItemSelectedListener {
     private val TAG: String? = "HomeFragment"
     var titleChangeListenre: TitleChangeListenre?= null
+    var navClickListenre: BottomNavClickListenre?= null
     var binding: FragmentHomeBinding? = null
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -51,7 +53,9 @@ class HomeFragment : Fragment(), View.OnClickListener,
     public fun setOnTitlechangeListener(listenre: TitleChangeListenre){
         titleChangeListenre = listenre
     }
-
+    public fun setOnBottomNavClickListener(listenre: BottomNavClickListenre){
+        navClickListenre = listenre
+    }
     override fun onClick(p0: View?) {
         when (p0?.id) {
 
@@ -64,19 +68,23 @@ class HomeFragment : Fragment(), View.OnClickListener,
         when (item.itemId) {
             R.id.home -> {
                 replaceFragment(NotificationFragment())
+                navClickListenre!!.onBottonNavClick(false)
                 return true
             }
             R.id.messages -> {
                 replaceFragment(MessagesFragment())
+                navClickListenre!!.onBottonNavClick(true)
                 callListener("Messages")
                 return true
             }
             R.id.notices -> {
+                navClickListenre!!.onBottonNavClick(false)
                 replaceFragment(NoticesFragment())
                 callListener("Notices")
                 return true
             }
             R.id.tenants -> {
+                navClickListenre!!.onBottonNavClick(false)
                 replaceFragment(TenantsFragment())
                 callListener("Tenants")
                 return true

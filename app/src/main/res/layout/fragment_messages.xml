@@ -9,8 +9,15 @@
         android:background="@color/light_very_grey"
         tools:context=".modules.signUp.SignUp">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_users"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
         <LinearLayout
-            android:id="@+id/one"
+            android:visibility="gone"
+            android:id="@+id/noMessages"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/square_bg_white"

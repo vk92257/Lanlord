@@ -124,6 +124,15 @@
     <string name="old_toronto_harbourfront_on_ca">Old Toronto, Harbourfront, ON, CA</string>
     <string name="temp_textg">Cras amet turpis cras lectus. Nibh congue etiam id urna temper, donec scelerisque nascetur aliquet. Mauris, sem sit dictum nulla vulputate nisl dignissim pulvinar volutpat. Iaculis justo pretium, amet sit odio. Velit nullam bibendum lectus phasellus iaculis pretium risks. Tristique lacus, pellentesque eleifend malesuada et nunc adipiscing. Purus arcu vitae mauris nisl. Condimentum nulla elit vestibulum neque hac dui neque id. Ac potenti adipiscing sit ac velit volutpat a. Tortor ullamcorper facilities present</string>
     <string name="set_maintenance_reminder">Set Maintenance Reminder</string>
+    <string name="steve">Steve</string>
+    <string name="velit_dolorem_voluptatem_voluptas">Velit dolorem voluptatem voluptas</string>
+    <string name="grant">General Notice</string>
+    <string name="legal_notice">Legal Notice</string>
+    <string name="dismiss">Dismiss</string>
+
+    <!--    Select Tenants-->
+    <string name="select_tenant">Select Tenant</string>
+    <string name="select_all">Select All</string>
 
 
 </resources>
