@@ -45,8 +45,6 @@ class MessagesFragment : Fragment(), View.OnClickListener {
 
 
     private fun perFormClicks() {
-
-
     }
 
     override fun onClick(p0: View?) {

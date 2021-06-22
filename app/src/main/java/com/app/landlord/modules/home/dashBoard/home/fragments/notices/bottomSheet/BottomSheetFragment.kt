@@ -8,7 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.app.landlord.R
 import com.app.landlord.databinding.FragmentBottomSheetDialogBinding
+import com.app.landlord.modules.home.dashBoard.home.fragments.notices.legalNotice.LegalNoticeActivity
 import com.app.landlord.modules.home.dashBoard.home.fragments.notices.selectTenants.SelectTenants
+import com.app.landlord.utils.Constants
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class BottomSheetFragment : BottomSheetDialogFragment(),View.OnClickListener{
@@ -46,16 +48,18 @@ class BottomSheetFragment : BottomSheetDialogFragment(),View.OnClickListener{
         when(p0?.id){
             R.id.generNotices ->{
                 Log.e("TAG", "onClick: ")
-                startActivity(Intent(activity,SelectTenants::class.java))
+                startActivity(Intent(activity,SelectTenants::class.java).putExtra(Constants.TYPE,Constants.GENERAL_NOTICE))
                 dismiss()
             }
+
             R.id.dismiss ->{
                 Log.e("TAG", "onClick: ")
                    dismiss()
             }
+
             R.id.legalNotice ->{
                 Log.e("TAG", "onClick: ")
-                startActivity(Intent(activity,SelectTenants::class.java))
+                startActivity(Intent(activity,SelectTenants::class.java).putExtra(Constants.TYPE,Constants.LEAGAL_NOTICE))
                 dismiss()
             }
         }

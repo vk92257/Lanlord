@@ -4,6 +4,9 @@ class Constants {
 
     companion object {
 
+        val TYPE = "type"
+        val GENERAL_NOTICE ="General Notice"
+        val LEAGAL_NOTICE ="Legal Notice"
         const val BASE_URL = "https://priceless-app.com/app/api/user/"
         const val ACCESSTOKEN = "5da994e3b462e1.97749892"
         const val LOGIN = "login"

@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Landlord">
-        <activity android:name=".modules.home.dashBoard.home.fragments.notices.legalNotice.LegalNoticeActivity"></activity>
+        <activity android:name=".modules.home.dashBoard.home.fragments.notices.noticeDetail.NoticeDetailActivity"></activity>
+        <activity android:name=".modules.home.dashBoard.home.fragments.notices.legalNotice.LegalNoticeActivity" />
         <activity android:name=".modules.home.dashBoard.home.fragments.notices.selectTenants.SelectTenants" />
         <activity android:name=".modules.home.dashBoard.home.fragments.messages.chat.ChatActivity" />
         <activity android:name=".modules.maintenanceReminder.MaintenanceReminder" />

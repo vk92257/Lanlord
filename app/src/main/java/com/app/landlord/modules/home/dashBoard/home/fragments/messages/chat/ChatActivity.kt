@@ -29,7 +29,7 @@ class ChatActivity : AppCompatActivity() ,View.OnClickListener{
 
     private fun setUpRV() {
         binding!!.rvUsers.layoutManager = LinearLayoutManager(this)
-        binding!!.rvUsers.adapter = TenantsAdapter(this,list)
+        binding!!.rvUsers.adapter = ChatAdapter(this,list)
 
         binding!!.rvUsers.setHasFixedSize(true)
 

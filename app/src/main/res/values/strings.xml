@@ -105,7 +105,6 @@
     <string name="it_seems_you_need_support_we_are_here_to_help_so_please_get_in_touch_with_us_by_sending_email">It seems you need support, we are here to help, so please get in touch with us by sending email</string>
     <string name="subject">Subject</string>
     <string name="enter_subject">Enter Subject</string>
-    <string name="message">Message</string>
     <string name="enter_your_query_here">Enter your query here</string>
     <string name="cancel">Cancel</string>
     <string name="change_password">Change Password</string>
@@ -133,6 +132,19 @@
     <!--    Select Tenants-->
     <string name="select_tenant">Select Tenant</string>
     <string name="select_all">Select All</string>
+
+    <!--   Legal Notice Screen-->
+    <string name="choose">Choose</string>
+    <string name="start_date">Start Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_date">End Date</string>
+    <string name="attach_document">Attach Document</string>
+    <string name="browse_upload">Browse/Upload</string>
+    <string name="send_notice">Send Notice</string>
+    <string name="start_date_amp_time"><![CDATA[Start Date & Time]]></string>
+    <string name="end_date_amp_time"><![CDATA[End Date & Time]]></string>
+    <string name="message">Message</string>
+    <string name="temp">Cras amet turpis cras lectus. Nibh congue etiam id urna temper, donec scelerisque nascetur aliquet. Mauris, sem sit dictum nulla vulputate nisl dignissim pulvinar volutpat. Iaculis justo pretium, amet sit odio. Velit nullam bibendum lectus phasellus iaculis pretium risks. Tristique lacus, pellentesque eleifend malesuada et nunc adipiscing. Purus arcu vitae mauris nisl. Condimentum nulla elit vestibulum neque hac dui neque id. Ac potenti adipiscing sit ac velit volutpat a. Tortor ullamcorper facilities present</string>
 
 
 </resources>

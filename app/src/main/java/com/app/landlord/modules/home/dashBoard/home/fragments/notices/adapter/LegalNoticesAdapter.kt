@@ -1,21 +1,18 @@
-package com.app.landlord.modules.home.dashBoard.home.fragments.notices.selectTenants.adaptaer
-import com.app.landlord.modules.home.dashBoard.home.fragments.messages.chat.model.Data
+package com.app.landlord.modules.home.dashBoard.home.fragments.notices.adapter
+import com.app.landlord.modules.home.dashBoard.home.fragments.notices.model.Data
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.constraintlayout.widget.ConstraintLayout
 
 import androidx.recyclerview.widget.RecyclerView
-import com.app.landlord.R
-import com.app.landlord.databinding.RvAddTenantsBinding
-import com.app.landlord.databinding.RvChatMessagesBinding
-import com.app.landlord.modules.home.dashBoard.feedback.listener.OnCancelClikcListener
+import com.app.landlord.databinding.RvNoticesBinding
+import com.app.landlord.modules.home.dashBoard.home.fragments.notices.noticeDetail.NoticeDetailActivity
 import com.app.landlord.modules.home.dashBoard.home.fragments.notices.selectTenants.listener.OnclickListener
-import kotlinx.android.synthetic.main.rv_messages.view.*
+import com.app.landlord.utils.Constants
 
 
-class TenantsAdapter() : RecyclerView.Adapter<TenantsAdapter.ChatViewHolder>()  {
+class LegalNoticesAdapter() : RecyclerView.Adapter<LegalNoticesAdapter.ChatViewHolder>()  {
 
     lateinit var ctx: Context
     val ROW_NUMBER = 8
@@ -33,7 +30,7 @@ class TenantsAdapter() : RecyclerView.Adapter<TenantsAdapter.ChatViewHolder>()  
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
 
-        val binding = RvAddTenantsBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val binding = RvNoticesBinding.inflate(LayoutInflater.from(parent.context),parent,false)
 
 //        val v = LayoutInflater.from(parent.context).inflate(R.layout.rv_chat_messages , parent, false)
 
@@ -42,14 +39,14 @@ class TenantsAdapter() : RecyclerView.Adapter<TenantsAdapter.ChatViewHolder>()  
 
 
     override fun onBindViewHolder(h: ChatViewHolder, position: Int) {
-                    h.itemView.root.setOnClickListener {
-                        onclickListener.onClick()
+                    h.itemView.setOnClickListener {
+                        ctx.startActivity(Intent(ctx,NoticeDetailActivity::class.java).putExtra(Constants.TYPE,Constants.LEAGAL_NOTICE))
                     }
                 }
 
     override fun getItemCount(): Int {
-        return 4
+        return 1
     }
 
-    class ChatViewHolder(itemView: RvAddTenantsBinding) : RecyclerView.ViewHolder(itemView.root)
+    class ChatViewHolder(itemView: RvNoticesBinding) : RecyclerView.ViewHolder(itemView.root)
 }
